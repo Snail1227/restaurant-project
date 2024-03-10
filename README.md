@@ -8,10 +8,11 @@
     npx prisma generate
     npm start
 
-2.in main folder:
+2. in main folder:
     ```bash
     npm install
     npm start
+    
 
 ### Used Technology:
 
