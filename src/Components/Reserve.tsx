@@ -26,7 +26,7 @@ export const Reserve: React.FC = () => {
             <ImagesEffect images={images} />
 
             <div className="reserve-about">
-                <h2>Reserve</h2>
+                <h1>Reserve</h1>
                 <p>We accept reservations seven days a week, up to 14 days in advance, via Resy. </p>
                 <div className="text-with-email">
                     <p>For parties of nine or more, please email </p>

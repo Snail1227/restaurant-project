@@ -207,8 +207,10 @@ h2 {
   width: 80%;
 }
 
-.contact-about h2,
-.location-col h1 {
+.reserve-about h1,
+.contact-about h1,
+.location-col h1,
+.ourStory-about h1 {
   text-align: center;
 }
 

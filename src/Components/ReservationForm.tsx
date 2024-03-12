@@ -30,19 +30,39 @@ export const ReservationForm: React.FC<ReservationFormProps> = ({ isVisible, tog
         e.preventDefault();
         const dateISO = datePicker ? datePicker.toISOString() : null;
         const timeISO = time ? time.toISOString() : null;
-        console.log(dateISO)
-        Request.createReservation({
-            registrarName: registrarName,
-            datePicker: dateISO,
-            time: timeISO,
-            guests: guests,
-        }).then(() => {
-            toast.success("Reservation created successfully")
-            handleReset();
-        }).catch(error => {
-            toast.error(error);
-            console.error("Failed to create reservation:", error);
-        });
+
+
+        if (registrarName !== '' ) {
+            if (dateISO !== null) {
+                if (timeISO !== null) {
+                    if (guests !== 0) {
+                        Request.createReservation({
+                            registrarName: registrarName,
+                            datePicker: dateISO,
+                            time: timeISO,
+                            guests: guests,
+                        }).then(() => {
+                            toast.success("Reservation created successfully")
+                            handleReset();
+                        }).catch(error => {
+                            let errorMessage = 'An unexpected error occurred.';
+                            if (error instanceof Error) {
+                                errorMessage = error.message;
+                            }
+                            toast.error(errorMessage);
+                        });
+                    } else {
+                        toast.error("Please fill out the guests number");
+                    }
+                } else {
+                    toast.error("Please fill out the time");
+                }
+            } else {
+                toast.error("Please fill out the date");
+            }
+        } else {
+            toast.error("Please fill out the registrar name");
+        }
     }
 
     return (

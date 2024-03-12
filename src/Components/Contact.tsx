@@ -14,7 +14,7 @@ export const Contact: React.FC = () => {
         <>
             <ImagesEffect images={images}/>
             <div className="contact-about">
-                <h2>Contact</h2>
+                <h1>Contact</h1>
                 <p>Vista Mare is a relaxed neighborhood café and wine bar in the heart of the West Village. We're open seven days a week until late, and we serve our full menu in the dining room and bar. We appreciate your inquiry, and someone from our team will respond shortly.</p>
                 <p>541 Hudson St,New York, NY 10014</p>
                 <div className="text-with-email">

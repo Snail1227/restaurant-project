@@ -17,7 +17,7 @@ export const SmallScreenHeader: React.FC = () => {
             <header className="header-small-screen"> 
                 <div className="logo">
                     <Link to="/home">
-                        <img src={logo} alt="logo" />
+                        <img src={logo} alt="logo" onClick={toggleHeaderVisibility} />
                     </Link>
                 </div>
                 <button onClick={toggleHeaderVisibility} className="toggle-header">{isHeaderVisible ? "✕" : "☰"}</button>

@@ -12,10 +12,10 @@ app.use(express.json());
 
 
 const bookingSchema = z.object({
-    name: z.string().min(1, { message: "Name is required" }),
+    name: z.string(),
     date: z.string(),
-    time: z.string().min(1, { message: "Time is required" }),
-    guests: z.number().min(1, { message: "At least one guest is required" }).max(8, { message: "Maximum of 8 guests allowed" }),
+    time: z.string(),
+    guests: z.number(),
   });
 
 
@@ -29,10 +29,9 @@ app.post('/reserve', async (req, res) => {
     res.json(booking);
   } catch (error) {
     if (error instanceof z.ZodError) {
-      return res.status(400).json(error.flatten());
+      return res.status(400).json({error: "Please fill out the form" });
     } else {
-      console.error(error);
-      res.status(500).json({ message: 'An unexpected error occurred' });
+      res.status(500).json({ message: "server side error" });
     }
   }
   });

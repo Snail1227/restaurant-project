@@ -36,7 +36,7 @@ export const Location: React.FC = () => {
                 </div>
 
                 <div>
-                    <p>Equal parts restaurant, wine bar, café, and later-evening haunt, Anton's sits on a charming block in a landmarked 1850s Greek-revival style building at 570 Hudson Street (corner of West 11th). Guests can choose to while away in our cozy café, tuck in to the spirited bar, or settle in to on our sidewalk patio when the weather allows. We're a neighborhood restaurant at our core, and we always reserve room for walk-in guests.</p>
+                    <p>Equal parts restaurant, wine bar, café, and later-evening haunt, Anton's sits on a charming block in a landmarked 1850s Greek-revival style building at 541 Hudson Street (corner of West 11th). Guests can choose to while away in our cozy café, tuck in to the spirited bar, or settle in to on our sidewalk patio when the weather allows. We're a neighborhood restaurant at our core, and we always reserve room for walk-in guests.</p>
                     <p>Our Hours</p>
                     <p>Monday - Wednesday, Noon - 10 PM</p>
                     <p>Thursday & Friday, Noon - 11 PM</p>

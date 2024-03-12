@@ -1,33 +1,38 @@
 :root {
-    --btn-color: #192c4f;
-    --btn-color-hover: #4e62ac;
-    --color-light: #96a1fa;
-    --color-active: #f8ebf5;
-  }
-  
-  ul {
-    list-style-type: none;
-  }
-  
-  li {
-    text-decoration: none;
-  }
-  
-  body {
-    width: 100%;
-    font-family: "Didot Regular";
-  }
+  --btn-color: #192c4f;
+  --btn-color-hover: #4e62ac;
+  --color-light: #96a1fa;
+  --color-active: #f8ebf5;
+}
 
-  h2, h1 {
-    font-style: italic;
-  }
-  
-  *, 
-  *::before,
-  *::after {
-    box-sizing: inherit;
-  }
-  
-  html {
-    scroll-behavior: smooth;
-  }
+ul {
+  list-style-type: none;
+}
+
+li {
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+  font-family: "Didot Regular";
+}
+
+h2,
+h1 {
+  font-style: italic;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera*/
+}
